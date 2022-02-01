@@ -1,4 +1,4 @@
-Related codes for paper "Multi-Dimensional Multiple Access with Resource Utilization Cost Awareness for Individualized Service Provisioning in 6G"
+Related codes for paper "Multi-Dimensional Multiple Access with Resource Utilization Cost Awareness for Individualized Service Provisioning in 6G."
 
 This implements the algorithms in the paper https://ieeexplore.ieee.org/document/9693983
 
