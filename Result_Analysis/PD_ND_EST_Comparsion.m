@@ -16,7 +16,7 @@ for loop_drop =  1 :  loop_drop_num_proposed
     u_cost_EST_temp =  [[Users(1:BS.num_of_UE).utilization_cost_est]'; u_cost_EST_temp];
 end
 ND_PD_EST_error_temp = ND_PD_temp - ND_PD_EST_temp;
-ND_PD_temp = ND_PD_temp(ND_PD_temp > 0.02);
+ND_PD_temp = ND_PD_temp(ND_PD_temp > 0.02); % if UE does not utilize PD-NOMA, it still has value of PD (equal to zero).
 ND_PD_EST_temp = ND_PD_EST_temp(ND_PD_EST_temp > 0.02);
 ND_PD_EST_error_temp = ND_PD_EST_error_temp(ND_PD_EST_error_temp ~= 0);
 u_cost_error_temp = u_cost_temp - u_cost_EST_temp;
