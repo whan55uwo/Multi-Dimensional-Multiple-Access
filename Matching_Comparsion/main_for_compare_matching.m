@@ -142,6 +142,7 @@ for loop_drop = 1:drop_num
     [sum_cost_est, utilization_cost_est_UE_array, iter_num_ag1]  = Many_to_one_matching_Yannan_TWC(); % output:UE coalitions
     Num_iteration_alg1_record(loop_drop) = iter_num_ag1;
     fprintf('loop_drop = %d, user coaltion formation. \n', loop_drop);
+    % In this comparison, we only compare the performance of user grouping/pairing.
     %% 9. Data Saving
     fprintf('loop_drop = %d, Finsih all and Save data!\n', loop_drop);
     savefile = sprintf('../Data/IMDMA/Case_for_compare_matching_%d_File_idx_%d_Result.mat', CASE_IDX, loop_drop);
